@@ -1,7 +1,11 @@
+import Header from 'components/Header';
 import styles from './Home.module.scss'
+
 
 export default function Home() {
   return (
-    <div>hell world!</div>
+    <main className={styles.main}>
+      <Header />
+    </main>
   );
 }

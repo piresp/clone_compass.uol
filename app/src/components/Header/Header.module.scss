@@ -1,0 +1,39 @@
+@import '../../styles/_variables.scss';
+
+.header {
+    border-bottom: 2px solid $header-border--grey;
+    padding: 0.3em 0;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    
+    &__div {
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        list-style:none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        &__items {
+            padding: 8px;
+            margin-right: 0.57em;
+
+            & a {
+                text-decoration: none;
+                font-weight: 700;
+                font-size: clamp(1rem,.75vw,4rem);
+                color: $font-primary--white;
+            }
+
+            &__square {
+                border: 1px solid $details--yellow;
+            }
+        }
+    }
+}
