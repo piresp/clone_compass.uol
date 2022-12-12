@@ -29,6 +29,10 @@
                 font-weight: 700;
                 font-size: clamp(1rem,.75vw,4rem);
                 color: $font-primary--white;
+
+                &:hover {
+                    color: $details--yellow;
+                }
             }
 
             &__square {
